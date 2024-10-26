@@ -17,12 +17,6 @@ def home():
 
 @app.route("/create", methods=('GET', 'POST'))
 def create():
-    if request.method == 'POST':
-        name = request.form['name']
-        yearlevel = request.form['yearlevel']
-        capacity = request.form['capacity']
-        classrooms.append({"name":name, "yearlevel":yearlevel, "capacity":capacity})
-        return redirect(url_for("view"))
     return render_template('create.html')
 
 @app.route('/view')
