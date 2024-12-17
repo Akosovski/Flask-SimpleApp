@@ -1,20 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-    <h1 class="title is-1 text-center">Welcome to Coding Lab's School Database!</h1>
-    <hr>
-    <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-lg btn-primary mx-3" 
-        onclick="window.location.href='{{ url_for('create') }}'">Create Data</button>
-
-        <button type="button" class="btn btn-lg btn-primary mx-3" 
-        onclick="window.location.href='{{ url_for('view') }}'">View Data</button>
-
-        <button type="button" class="btn btn-lg btn-primary mx-3" 
-        onclick="window.location.href='{{ url_for('update') }}'">Update Data</button>
+    
+<div class="bg-dark d-flex justify-content-center" style="height: 800px">
+    <div class="container text-center" style="margin-top: 300px;">
+        <h1 style="color: white;">Welcome to My Flask Web App!</h1>
+        <button type="button" class="btn btn-primary btn-lg" style="margin-top: 25px;" 
+        onclick="window.location.href='{{ url_for('signup') }}'">Sign Up Here!</button>
     </div>
-    <hr>
-    <h4 class="title is-4">Please use the buttons above to navigate around the site!</h4>
+</div>
 
 {% endblock %}

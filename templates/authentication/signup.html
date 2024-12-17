@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-center bg-dark" style="height: 1000px;">
+
+    <div class="d-flex flex-column bg-light" style="margin-top: 200px; height: 500px; padding: 20px;">
+
+        <h1>Sign Up</h1>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputUsername6" class="col-form-label">Username</label>
+            </div>
+            <div class="col-auto">
+              <input type="Username" id="inputUsername6" class="form-control" aria-describedby="UsernameHelpInline">
+            </div>
+            <div class="col-auto">
+              <span id="UsernameHelpInline" class="form-text">
+                Must be 4-20 characters long.
+              </span>
+            </div>
+        </div>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputEmail6" class="col-form-label">Email</label>
+            </div>
+            <div class="col-auto">
+              <input type="Email" id="inputEmail6" class="form-control" aria-describedby="EmailHelpInline">
+            </div>
+            <div class="col-auto">
+              <span id="EmailHelpInline" class="form-text">
+                Must contain @ as a proper email.
+              </span>
+            </div>
+        </div>
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">Password</label>
+            </div>
+            <div class="col-auto">
+              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+              <span id="passwordHelpInline" class="form-text">
+                Must be 8-20 characters long.
+              </span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
