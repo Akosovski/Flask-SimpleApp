@@ -2,12 +2,24 @@
 
 {% block content %}
     
-<div class="bg-dark d-flex justify-content-center" style="height: 800px">
-    <div class="container text-center" style="margin-top: 300px;">
-        <h1 style="color: white;">Welcome to My Flask Web App!</h1>
-        <button type="button" class="btn btn-primary btn-lg" style="margin-top: 25px;" 
-        onclick="window.location.href='{{ url_for('signup') }}'">Sign Up Here!</button>
+<div class="px-4 pt-5 text-center" style="margin-top: 20vh;">
+
+    <h3> Hi! Welcome to </h3>
+    <h1 class="display-4 fw-bold text-body-emphasis mb-2">S206 Web Application Template</h1>
+
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+            Use this template for a base on Lesson 3 onwards.
+        </p>
+
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-4 border-top pt-4">
+
+            <button type="button" class="btn btn-outline-primary btn-lg mt-1" style="min-width: 250px;"
+            onclick="window.location.href='{{ url_for('signup') }}'">Sign Up</button>
+
+        </div>
     </div>
+
 </div>
 
 {% endblock %}

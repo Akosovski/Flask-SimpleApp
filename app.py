@@ -2,7 +2,6 @@ from flask import Flask, render_template, redirect, request, url_for
 
 app = Flask(__name__)
 
-# Sample data for classrooms
 classrooms = [
     {"name": "Math 101", "yearlevel": "Freshman", "capacity": 30},
     {"name": "Science 102", "yearlevel": "Sophomore", "capacity": 25},
